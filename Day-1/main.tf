@@ -7,12 +7,12 @@ resource "aws_instance" "name" {
     tags = {
   Name= "FirstTFec2-2"
 }
-
 }
-    resource "aws_s3_bucket" "name" {
-    bucket = "myprakharbucket123"
+#}
+    #resource "aws_s3_bucket" "name" {
+    #bucket = "myprakharbucket123"
   
-}
+#}
 
 
 
