@@ -22,5 +22,6 @@ variable "key_name" {
 
 variable "users_name" {
   type=list(string)
-  default = ["dev","test" ,"prod"]
-  }
+  default = ["dev","prod"]
+  
+}

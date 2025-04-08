@@ -4,10 +4,20 @@ resource "aws_instance" "name" {
     instance_type =var.Instance_type
     key_name = var.key_name
 
+    //Name wise
+    count=length(var.users_name)
+ 
     tags = {
-  Name= "countec2"
-
+        Name=var.users_name[count.index]
+    }
 }
-count =5
 
-}
+   
+  
+  //print by order wise
+  ###count =3
+    #tags = {
+  #Name= "countec2-@${count.index}
+
+
+
